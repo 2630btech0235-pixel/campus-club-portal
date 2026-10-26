@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join a Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Join a campus</h1>
+        <p>Share your interests and become part of our campus community!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="activities.html">Explore Activities</a>
+        <a href="join-club.html">Join a Club</a>
+    </nav>
+
+    <main>
+        <section class="formSection">
+            <h2>Club Registration Form</h2>
+
+            <form>
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName"
+                       placeholder="Enter your full name">
+
+                <label for="clubName">Club Name:</label>
+                <select id="clubName">
+                    <option value="">Select a club</option>
+                    <option value="Coding Club">Coding Club</option>
+                    <option value="Dance Club">Dance Club</option>
+                    <option value="Photography Club">Photography Club</option>
+                </select>
+
+                <label for="areaInterest">Area of Interest:</label>
+                <input type="text" id="areaInterest"
+                       placeholder="Enter your area of interest">
+
+                <label for="studyYear">Year of Study:</label>
+                <select id="studyYear">
+                    <option value="">Select your year</option>
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
+                </select>
+
+                <button type="button" onclick="submitForm()">
+                    Submit
+                </button>
+                <p id="formMessage"></p>
+            </form>
+
+            <button type="button" onclick="changeFormHeading()">
+                Change Heading Size
+            </button>
+
+            <button type="button" onclick="toggleForm()">
+                Show / Hide Form
+            </button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

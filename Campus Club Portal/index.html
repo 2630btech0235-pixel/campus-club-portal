@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Club Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Campus Club Portal</h1>
+        <p>Discover your interests. Connect with your campus.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="activities.html">Explore Activities</a>
+        <a href="join-club.html">Join a Club</a>
+    </nav>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to Our Campus!</h2>
+            <P>
+                Join the campus clubs and explore new things and learn more.
+            </P>
+        </section>
+
+        <section id="featuredActivities">
+            <h2>Featured Activities</h2>
+
+            <div class="activityContainer">
+
+                <div class="activityCard">
+                    <h3>Web Development</h3>
+                    <p><strong>Club:</strong> Coding Club</p>
+                    <p><strong>Category:</strong> Technology</p>
+                </div>
+
+                <div class="activityCard">
+                    <h3>Dance Competition</h3>
+                    <p><strong>Club:</strong> Dance Club</p>
+                    <p><strong>Category:</strong> Cultural</p>
+                </div>
+
+                <div class="activityCard">
+                    <h3>Tree Plantation</h3>
+                    <p><strong>Club:</strong> Eco Club</p>
+                    <p><strong>Category:</strong> Environment</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="buttons">
+            <button onclick="changeHeading()">
+                Change Main Heading
+            </button>
+
+            <button onclick="changeCardColor()">
+                Change Card Background
+            </button>
+
+            <button onclick="toggleActivities()">
+                Show / Hide Activities
+            </button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

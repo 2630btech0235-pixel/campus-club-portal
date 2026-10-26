@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Activities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Explore Campus Activities</h1>
+        <p>Find activities, learn new skills, and follow your interests!</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="activities.html">Explore Activities</a>
+        <a href="join-club.html">Join a club</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Our Activities</h2>
+
+            <div class="activityContainer">
+
+                <div class="activityCard">
+                    <h3>Web Development Workshop</h3>
+                    <p><strong>Club:</strong> Coding Club</p>
+                    <p><strong>Category:</strong> Technology</p>
+                    <p><strong>Venue:</strong> Computer Lab</p>
+                    <button onclick="markInterested(this)">
+                        Interested
+                    </button>
+                </div>
+
+                <div class="activityCard">
+                    <h3>Dance Competition</h3>
+                    <p><strong>Club:</strong> Dance Club</p>
+                    <p><strong>Category:</strong> Cultural</p>
+                    <p><strong>Venue:</strong> College Auditorium</p>
+                    <button onclick="markInterested(this)">
+                        Interested
+                    </button>
+                </div>
+
+                <div class="activityCard">
+                    <h3>Tree Plantation Drive</h3>
+                    <p><strong>Club:</strong> Eco Club</p>
+                    <p><strong>Category:</strong> Environment</p>
+                    <p><strong>Venue:</strong> College Garden</p>
+                    <button onclick="markInterested(this)">
+                        Interested
+                    </button>
+                </div>
+
+                <div class="activityCard">
+                    <h3>Photography Workshop</h3>
+                    <p><strong>Club:</strong> Photography Club</p>
+                    <p><strong>Category:</strong> Creative Arts</p>
+                    <p><strong>Venue:</strong> Seminar Hall</p>
+                    <button onclick="markInterested(this)">
+                        Interested
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Add an Activity</h2>
+
+            <label for="activityName">Enter Activity Name:</label>
+            <input type="text" id="activityName"
+                   placeholder="Enter activity name">
+
+            <button onclick="showActivity()">
+                Show Activity
+            </button>
+
+            <p id="activityMessage"></p>
+            <p id="newActivity"></p>
+        </section>
+
+        <section>
+            <h2>Change Activity Text</h2>
+
+            <p id="sampleText">
+                Explore new opportunities on campus!
+            </p>
+
+            <button onclick="changeActivityText()">
+                Change Text Appearance
+            </button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
